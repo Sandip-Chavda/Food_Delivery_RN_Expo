@@ -1,6 +1,8 @@
 import CartButton from "@/components/CartButton";
+import MenuCard from "@/components/MenuCard";
 import { getCategories, getMenu } from "@/lib/appwrite";
 import useAppwrite from "@/lib/useAppwrite";
+import { MenuItem } from "@/type";
 import cn from "clsx";
 import { useLocalSearchParams } from "expo-router";
 import React, { useEffect } from "react";
@@ -44,7 +46,7 @@ const SearchScreen = () => {
                 !isFirstRightColItem ? "mt-10" : "mt-0"
               )}
             >
-              <Text>Menu Card</Text>
+              <MenuCard item={item as MenuItem} />
             </View>
           );
         }}
