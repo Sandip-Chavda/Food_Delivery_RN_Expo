@@ -4,6 +4,10 @@
 
 ## 🎥 Demo
 
+
+https://github.com/user-attachments/assets/221db9a3-cb83-46bc-88cb-056a1e7a6fc0
+
+
 ## Summary :
 
 - This Food Ordering App allows users to browse, search, and order delicious foods seamlessly. Built with React Native and Expo, it provides a modern, responsive UI and integrates Appwrite
