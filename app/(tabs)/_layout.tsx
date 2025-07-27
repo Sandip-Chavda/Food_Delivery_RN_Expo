@@ -11,9 +11,9 @@ const TabbarIcon = ({ focused, icon, title }: TabBarIconProps) => {
     <View className="tab-icon">
       <Image
         source={icon}
-        className="size-7"
+        className="size-6"
         resizeMode="contain"
-        tintColor={focused ? "#FE8c00" : "#5D5F6D"}
+        tintColor={focused ? "#FE8c00" : "#878787"}
       />
       <Text
         className={cn(
@@ -46,7 +46,7 @@ const TabsLayout = () => {
           position: "absolute",
           bottom: 30,
           backgroundColor: "white",
-          height: 75,
+          height: 67,
           shadowColor: "#1a1a1a",
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,

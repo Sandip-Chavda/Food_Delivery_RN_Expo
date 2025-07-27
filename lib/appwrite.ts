@@ -130,3 +130,12 @@ export const getCategories = async () => {
     throw new Error("Error while getting categories.", error);
   }
 };
+
+export const logout = async () => {
+  try {
+    await account.deleteSession("current");
+  } catch (error) {
+    console.log("Error while logging out:", error);
+    throw new Error("Logout failed.");
+  }
+};

@@ -1,6 +1,7 @@
 import CustomButton from "@/components/CustomButton";
 import CustomInput from "@/components/CustomInput";
 import { createUser } from "@/lib/appwrite";
+import useAuthStore from "@/store/auth.store";
 import { Link, router } from "expo-router";
 import React, { useState } from "react";
 import { Alert, Text, View } from "react-native";
@@ -8,6 +9,8 @@ import { Alert, Text, View } from "react-native";
 const SignUpScreen = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", password: "" });
+
+  const { fetchAuthenticatedUser } = useAuthStore();
 
   const submit = async () => {
     if (!form.name || !form.email.trim() || !form.password.trim()) {
@@ -26,7 +29,8 @@ const SignUpScreen = () => {
         name: form.name,
       });
 
-      router.replace("/");
+      await fetchAuthenticatedUser();
+      router.replace("/(tabs)");
     } catch (error: any) {
       Alert.alert("Error", error.message);
       console.log("Error while sign up user", error);
