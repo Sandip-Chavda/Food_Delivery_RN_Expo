@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# 🍔 Food Ordering App 🍕
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🚀 A modern food ordering mobile application built with React Native (Expo), Expo Router, TailwindCSS + NativeWind, and Appwrite for backend services.
 
-## Get started
+## 🎥 Demo
 
-1. Install dependencies
+## Summary :
 
-   ```bash
-   npm install
-   ```
+- This Food Ordering App allows users to browse, search, and order delicious foods seamlessly. Built with React Native and Expo, it provides a modern, responsive UI and integrates Appwrite
 
-2. Start the app
+## 🌟 Features
 
-   ```bash
-   npx expo start
-   ```
+- ✅ **User Authentication** with Appwrite (Signup, Login, Logout).
+- ✅ ** Modern UI** using TailwindCSS & NativeWind.
+- ✅ **Home Screen** Displays featured foods & categories.
+- ✅ **Search Screen** Search for foods easily & Category Filter foods by category.
+- ✅ **Profile Screen** Manage user details.
+- ✅ **State Management** Powered by Zustand.
+- ✅ **Backend with Appwrite** Database, authentication & asset storage.
 
-In the output, you'll find options to open the app in a
+## 📱 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Frontend:** TypeScript, [React Native (Expo)](https://expo.dev/), Expo Router, NativeWind, TailwindCSS
+- **Backend:** Appwrite (Database, Auth, File Storage)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Installation (Client)
 
-## Get a fresh project
-
-When you're ready, run:
+1️⃣ **Clone the repository:**
 
 ```bash
-npm run reset-project
+git clone https://github.com/Sandip-Chavda/Food_Delivery_RN_Expo.git
+
+cd Food_Delivery_RN_Expo
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2️⃣ **Install dependencies:**
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+or
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+yarn install
+```
 
-## Join the community
+3️⃣ **Start the Expo project:**
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4️⃣ **Environment Variables:**  
+Create `.env` in your server directory with:
+
+```
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=""
+EXPO_PUBLIC_APPWRITE_ENDPOINT=""
+EXPO_PUBLIC_APPWRITE_PLATFORM=""
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=""
+EXPO_PUBLIC_APPWRITE_BUCKET_ID=""
+EXPO_PUBLIC_APPWRITE_USER_COLLECTION_ID=""
+EXPO_PUBLIC_APPWRITE_CATEGORIES_COLLECTION_ID=""
+EXPO_PUBLIC_APPWRITE_MENU_COLLECTION_ID=""
+EXPO_PUBLIC_APPWRITE_CUSTOMIZATIONS_COLLECTION_ID=""
+EXPO_PUBLIC_APPWRITE_MENU_CUSTOMIZATIONS_COLLECTION_ID=""
+```
+
+5️⃣**Open in Expo Go:**
+
+- Download **Expo Go** from your phone’s App Store or Play Store.
+- Scan QR code from terminal or Expo Dev Tools.
+
+## 🤝 Contribution
+
+Contributions, issues, and pull requests are warmly welcomed!  
+Please follow the [contributing guidelines] if you’d like to contribute.
+
+## 📝 License
+
+MIT — See [LICENSE](LICENSE) for more details.
